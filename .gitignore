@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/
+
+# Logs
+*.log
+
+# Operating System generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+

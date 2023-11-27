@@ -1,0 +1,30 @@
+{
+  "name": "franks_chemical_simulator_v2",
+  "version": "1.0.0",
+  "description": "App designed for chemical engineering",
+  "main": "index.js",
+  "scripts": {
+    "test": "main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgillet4/Franks-Chemical-Simulator-V2.git"
+  },
+  "keywords": [
+    "process",
+    "engineering",
+    "chemical",
+    "engineering",
+    "engineering",
+    "design"
+  ],
+  "author": "Francis Gillet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgillet4/Franks-Chemical-Simulator-V2/issues"
+  },
+  "homepage": "https://github.com/fgillet4/Franks-Chemical-Simulator-V2#readme",
+  "devDependencies": {
+    "electron": "^27.1.2"
+  }
+}
