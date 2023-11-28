@@ -50,6 +50,7 @@ This project is licensed under the ISC License - see the LICENSE.md file for det
 
 8. **Acknowledgments**
 Send me a tip to any of my crypto wallets if you want me to keep developing certain features!!
+
 BTC:bc1qsph06nm9qtwx4ydg7p0p0cv9yv3cstw7ghkvwz
 
 ETH:0x17fede1a0c5cfbcce54e7f25ede69d0ba08a269c
@@ -75,21 +76,39 @@ CARDANO:addr1q8n8p6rq5a9nusf7vycpgxnc6e2hvg59glm6ehmrpxz379lca33un224ugrr9rytg2j
 SOLANA:4kmifrvanBVbeGRz8gi5o9bJ6e6y1ixtGPSagHxaa4jT
 
 
-### Steps to Create and Add the README to Your Repository
+### Steps to stage changes made and update repo
 
-1. **Create the README File**:
-   - In your project's root directory, create a file named `README.md`.
-   - You can use a command like `touch README.md` and then open it in a text editor.
+1. **If you want to add all new or modified files at once, use:**
+   ```bash 
+   git add .
+   ``` 
+2. **If you prefer to add specific files, use:**
+   ```bash
+   git add path/to/your/file
+   ```
+3. **For example:**
+   ```bash
+   git add src/renderer/index.html
+   ```
+4. **For example:**
+   ```bash
+   git add src/renderer/styles.css
+   ```
+### Steps to commit changes made
+5. **Once you've staged your changes, commit them with a descriptive message:**
+   ```bash
+   git commit -m "Change made"
+   ```
+6. **After committing your changes, push them to your GitHub repository:**
+   ```bash
+   git push origin main
+   ```
 
-2. **Edit the README**:
-   - Fill in the README with the content from the template above. Adjust it as necessary to fit your project.
+7. **If it's the first time you're pushing or if you've recently re-initialized your Git repository, you might need to set the upstream for your local branch:**
+   ```bash
+   git push -u origin main
+   ```
 
-3. **Commit and Push Changes**:
-   - Once your README is ready, add, commit, and push it to your GitHub repository:
-     ```bash
-     git add README.md
-     git commit -m "Add README"
-     git push origin main
-     ```
+
 
 
