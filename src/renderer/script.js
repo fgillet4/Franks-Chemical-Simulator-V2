@@ -13,7 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // Add more event listeners as needed
+    // Event listener for the Flowsheet Simulation button
+    const flowsheetSimulationBtn = document.getElementById('flowsheetSimulation');
+    if (flowsheetSimulationBtn) {
+      flowsheetSimulationBtn.addEventListener('click', () => {
+        // Logic for Flowsheet Simulation
+        console.log("Flowsheet Simulation Clicked");
+        // You might load new content, call a function, or send a message to the main process
+      });
+    }
+  
+    // More event listeners and logic can be added here as needed
     // ...
   });
   
@@ -30,9 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateContent('h1', 'New Header Text');
   }
   
-  // Call the function to update the header text (can be triggered by some event)
+  // Uncomment the below line to change the header text (can be triggered by some event)
   // changeHeaderText();
-  
-  // You can include more helper functions, event handlers, and other code as needed
-  // ...
   

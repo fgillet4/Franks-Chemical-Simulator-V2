@@ -99,7 +99,13 @@ header .highlight, header .current a {
   color: #e8491d; /* Highlight color */
   font-weight: bold;
 }
-
+/* Basic button styling */
+button {
+    margin: 5px;
+    padding: 10px;
+    /* Add more styles as per your design */
+  }
+  
 /* Footer */
 footer {
   padding: 20px;
@@ -110,3 +116,41 @@ footer {
 }
 
 /* Add other styles as needed */
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 16px;
+    }
+    body {
+      padding: 10px;
+    }
+  }
+  
