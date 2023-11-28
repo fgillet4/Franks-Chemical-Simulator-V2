@@ -5,7 +5,8 @@
   "main": "src/main/index.js",
   "scripts": {
     "start":"electron .",
-    "test": "src/renderer/script.js"
+    "test": "src/renderer/script.js",
+    "build": "node scripts/build.js"    
   },
   "repository": {
     "type": "git",
