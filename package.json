@@ -2,9 +2,10 @@
   "name": "franks_chemical_simulator_v2",
   "version": "1.0.0",
   "description": "App designed for chemical engineering",
-  "main": "index.js",
+  "main": "src/main/index.js",
   "scripts": {
-    "test": "main.js"
+    "start":"electron .",
+    "test": "src/renderer/main.js"
   },
   "repository": {
     "type": "git",
