@@ -5,6 +5,7 @@ function createWindow() {
   const primaryDisplay = screen.getPrimaryDisplay();
   const { width, height } = primaryDisplay.workAreaSize;
 
+
   // Create the browser window with a dynamic size.
   let win = new BrowserWindow({
     width: width * 0.8, // 80% of the screen width
@@ -19,7 +20,7 @@ function createWindow() {
   win.loadFile('src/renderer/index.html');
 
   // Open the DevTools.
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);

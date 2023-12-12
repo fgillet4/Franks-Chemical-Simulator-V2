@@ -21,6 +21,239 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+/* styles.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* styles.css */
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #36393f; /* Discord dark theme background color */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #2f3136; /* Discord sidebar background color */
+  width: 240px; /* Width of the sidebar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Sidebar styles */
+.sidebar button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  border-radius: 25px; /* Initially rounded like a circle */
+  transition: background-color 0.3s, border-radius 0.3s, padding-left 0.3s; /* Transition for the hover effect */
+  /* ... (other button styles) ... */
+}
+
+.sidebar button:hover {
+  border-radius: 10px; /* More square-like on hover */
+  padding-left: 20px; /* Increase padding to make the text move */
+  background-color: #4f545c; /* Change color on hover */
+}
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+.main-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Utility classes */
+.full-height {
+  height: 100%;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #333;
+  min-width: 250px; /* Adjust width as needed */
+  height: 100vh; /* Full-height */
+  padding: 20px 10px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  background-color: #5865f2; /* Discord's blurple button color */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 10px; /* Space between buttons */
+  text-align: left;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #4752c4; /* Darker blurple on hover */
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Additional styles */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    min-width: 200px;
+  }
+}
+
+/* Base styles */
+html, body {
+  height: 100%;
+  background-color: #36393f; /* Discord dark background */
+  color: #dcddde; /* Light text color used in Discord */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; /* White text for headings */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #5865f2; /* Discord's blurple button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #4752c4; /* Darker blurple on hover */
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Flexbox for layout */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+  background-color: #23272a; /* Slightly lighter dark shade for the header */
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: #23272a; /* Same as header */
+  color: #72767d; /* Muted text color for footer */
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
