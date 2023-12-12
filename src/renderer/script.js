@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     // Event listener for the Flowsheet Simulation button
-    const massEnergyBalanceBtn = document.getElementById('flowsheetSimulation');
+    const massEnergyBalanceBtn = document.getElementById('massEnergyBalance');
     if (massEnergyBalanceBtn) {
       massEnergyBalanceBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event listener for the Flowsheet Simulation button
-    const equiptmentSizingBtn = document.getElementById('equiptmentDesign');
-    if (equiptmentSizingBtn) {
-      equiptmentSizingBtn.addEventListener('click', () => {
+    const bernoulliBalanceBtn = document.getElementById('equiptmentDesign');
+    if (bernoulliBalanceBtn) {
+      bernoulliBalanceBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
-        console.log("Equiptment Design Clicked");
+        console.log("Hydrualic Design Clicked");
       });
     }
     // Event listener for the Flowsheet Simulation button
@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
     
-
       const processSafetyBtn = document.getElementById('processSafety');
       if (processSafetyBtn) {
         processSafetyBtn.addEventListener('click', () => {
@@ -51,11 +50,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
       }
-      const chemicalPropertiesBtn = document.getElementById('chemicalProperties');
-      if (chemicalPropertiesBtn) {
-        chemicalPropertiesBtn.addEventListener('click', () => {
+      const addRemoveChemicalsBtn = document.getElementById('addRemoveChemicals');
+      if (addRemoveChemicalsBtn) {
+        addRemoveChemicalsBtn.addEventListener('click', () => {
           // Logic for Flowsheet Simulation
           console.log("Chemical Properties Button Clicked");
+          // You might load new content, call a function, or send a message to the main process
+        });
+      }
+      const thermodynamicPropertiesBtn = document.getElementById('thermodynamicProperties');
+      if (thermodynamicPropertiesBtn) {
+        thermodynamicPropertiesBtn.addEventListener('click', () => {
+          // Logic for Flowsheet Simulation
+          console.log("Thermodynamic Properties Button Clicked");
+          // You might load new content, call a function, or send a message to the main process
+        });
+      }
+      const pipingInstrumentationBtn = document.getElementById('pipingInstrumentation');
+      if (pipingInstrumentationBtn) {
+        pipingInstrumentationBtn.addEventListener('click', () => {
+          // Logic for Flowsheet Simulation
+          console.log("Piping and Instrumentation Button Clicked");
           // You might load new content, call a function, or send a message to the main process
         });
       }
@@ -76,9 +91,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
     
-    const unitOpSimulation = document.getElementById('unitOpSimulation');
-    if (unitOpSimulation) {
-      unitOpSimulation.addEventListener('click', () => {
+    const unitOpSimulationBtn = document.getElementById('unitOpSimulation');
+    if (unitOpSimulationBtn) {
+      unitOpSimulationBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
         console.log("Unit Op Simulation Button Clicked");
         // You might load new content, call a function, or send a message to the main process
@@ -86,22 +101,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     
-    const processSynthesisBtn = document.getElementById('processSynthesis');
-    if (processSynthesisBtn) {
-      processSynthesisBtn.addEventListener('click', () => {
+    const equiptmentDesignBtn = document.getElementById('equiptmentDesign');
+    if (equiptmentDesignBtn) {
+      equiptmentDesignBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
         console.log("Process Synthesis Button Clicked");
         // You might load new content, call a function, or send a message to the main process
       });
     }
-    const processAnalysisBtn = document.getElementById('processAnalysis');
-    if (processAnalysisBtn) {
-      processAnalysisBtn.addEventListener('click', () => {
+    const postProcessAnalysisBtn = document.getElementById('postProcessAnalysis');
+    if (postProcessAnalysisBtn) {
+      postProcessAnalysisBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
-        console.log("Process Analysis Button Clicked");
+        console.log("Post Process Analysis Button Clicked");
         // You might load new content, call a function, or send a message to the main process
       });
     }
+    const exportTechnicalReportBtn = document.getElementById('exportTechnicalDocument');
+    if (exportTechnicalReportBtn) {
+      exportTechnicalReportBtn.addEventListener('click', () => {
+        // Logic for Flowsheet Simulation
+        console.log("Export Technical Report Button Clicked");
+        // You might load new content, call a function, or send a message to the main process
+      });
+    }
+    const generalSettingsBtn = document.getElementById('generalSettings');
+    if (generalSettingsBtn) {
+      generalSettingsBtn.addEventListener('click', () => {
+        // Logic for Flowsheet Simulation
+        console.log("General Settings Button Clicked");
+        // You might load new content, call a function, or send a message to the main process
+      });
+    }
+
 
     // More event listeners and logic can be added here as needed
     // ...
