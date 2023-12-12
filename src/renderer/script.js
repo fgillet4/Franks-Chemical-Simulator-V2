@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     // Event listener for the Flowsheet Simulation button
-    const flowsheetSimulationBtn = document.getElementById('flowsheetSimulation');
-    if (flowsheetSimulationBtn) {
-      flowsheetSimulationBtn.addEventListener('click', () => {
+    const massEnergyBalanceBtn = document.getElementById('flowsheetSimulation');
+    if (massEnergyBalanceBtn) {
+      massEnergyBalanceBtn.addEventListener('click', () => {
         // Logic for Flowsheet Simulation
-        console.log("Flowsheet Simulation Clicked");
+        console.log("Mass Energy Balance Clicked");
         // You might load new content, call a function, or send a message to the main process
       });
     }
