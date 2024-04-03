@@ -1,0 +1,39 @@
+Franks Chemical Simulator V2
+│
+├── Frontend (Client-Side)
+│   ├── HTML (index.html)
+│   │   └── Defines the structure of the web application's user interface.
+│   │
+│   ├── CSS (main.css)
+│   │   └── Styles the user interface for better user experience.
+│   │
+│   └── JavaScript (script.js, utility.js)
+│       ├── Manages user interactions and dynamic content.
+│       └── Communicates with the Backend for data processing and retrieval.
+│
+├── Backend (Server-Side)
+│   ├── Node.js/Express.js Server
+│   │   └── Manages subscription logic, user authentication, and authorization.
+│   │
+│   ├── Database (database.json)
+│   │   └── Stores user data, subscription details, and simulation results.
+│   │
+│   └── WebAssembly Modules (e.g., darcy_weisbach_wasm.wasm)
+│       └── Performs intensive computations for chemical simulations.
+│
+├── Chemical_Reaction_Engineering_Module
+│   └── Python Scripts (e.g., LEP-13-1a.py, LEP-13-3_English.py)
+│       └── Contains logic for specific chemical engineering calculations.
+│
+├── PID Editor (pidEditor.js, symbolsPalette.js)
+│   └── Enables users to create and edit Piping and Instrumentation Diagrams.
+│
+├── Flowsheet Simulation (flowsheetModel.js, solver.js)
+│   └── Manages the simulation of chemical processes within the flowsheet.
+│
+└── Subscription Management
+    ├── Subscription Model Logic
+    │   └── Defines the pricing tiers, features, and limitations per subscription level.
+    │
+    └── Payment Gateway Integration
+        └── Handles subscription payments, renewals, and cancellations.

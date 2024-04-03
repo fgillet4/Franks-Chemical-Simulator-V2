@@ -13,7 +13,9 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, 
+
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,245 +30,25 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 /* styles.css */
-/* Reset styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
-body {
-  display: flex;
+
+html,body {
   height: 100vh;
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI',Arial, Tahoma, Geneva, Verdana, sans-serif;
   background-color: #36393f; /* Discord dark theme background color */
-}
-
-/* Sidebar styles */
-.sidebar {
-  background-color: #2f3136; /* Discord sidebar background color */
-  width: 240px; /* Width of the sidebar */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar h1 {
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-/* Sidebar styles */
-.sidebar button {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 10px;
-  border-radius: 25px; /* Initially rounded like a circle */
-  transition: background-color 0.3s, border-radius 0.3s, padding-left 0.3s; /* Transition for the hover effect */
-  /* ... (other button styles) ... */
-}
-
-.sidebar button:hover {
-  border-radius: 10px; /* More square-like on hover */
-  padding-left: 20px; /* Increase padding to make the text move */
-  background-color: #4f545c; /* Change color on hover */
-}
-/* Main content styles */
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #f4f4f4; /* Light grey background */
-}
-
-.main-content h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Utility classes */
-.full-height {
-  height: 100%;
-}
-
-/* Additional responsive adjustments */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 200px;
-  }
-}
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-}
-
-/* Sidebar styles */
-.sidebar {
-  background-color: #333;
-  min-width: 250px; /* Adjust width as needed */
-  height: 100vh; /* Full-height */
-  padding: 20px 10px;
-}
-
-.sidebar button {
-  display: block;
-  width: 100%;
-  background-color: #5865f2; /* Discord's blurple button color */
-  color: white;
-  border: none;
-  padding: 15px 20px;
-  margin-bottom: 10px; /* Space between buttons */
-  text-align: left;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.sidebar button:hover {
-  background-color: #4752c4; /* Darker blurple on hover */
-}
-
-/* Main content styles */
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #f4f4f4; /* Light grey background */
-}
-
-/* Additional styles */
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .sidebar {
-    min-width: 200px;
-  }
-}
-
-/* Base styles */
-html, body {
-  height: 100%;
-  background-color: #36393f; /* Discord dark background */
-  color: #dcddde; /* Light text color used in Discord */
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  color: #fff; /* White text for headings */
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Button Styles */
-button {
-  background-color: #5865f2; /* Discord's blurple button color */
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-button:hover {
-  background-color: #4752c4; /* Darker blurple on hover */
-}
-
-/* Container styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Flexbox for layout */
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Header Styles */
-header {
-  background-color: #23272a; /* Slightly lighter dark shade for the header */
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-/* Footer styles */
-footer {
-  background-color: #23272a; /* Same as header */
-  color: #72767d; /* Muted text color for footer */
-  text-align: center;
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Media queries for responsive adjustments */
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 992px) {
-  h1 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .flex {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 16px;
-  }
-
-  body {
-    padding: 10px;
-  }
+  color: #333; /* Dark grey text */
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display: flex;
 }
 
-body {
-  line-height: 1;
-  background-color: #f4f4f4; /* Light grey background */
-  color: #333; /* Dark grey text */
-  font-family: Arial, sans-serif; /* Use a nice font-family */
-}
 
 ol, ul {
   list-style: none;
@@ -285,20 +67,34 @@ a:hover {
 
 /* Common layout components */
 
+/* App container styles */
+.app-container {
+  position: relative; /* Position relative to allow absolute positioning of header and footer */
+  display: flex;
+  flex-direction: row; /* Align sidebar and main content horizontally */
+  height: 100vh; /* Full viewport height */
+}
 /* Container */
 .container {
+  max-width: 1200px; /* Adjust this value based on the actual size of the container */
   width: 80%;
   margin: auto; /* Center the container */
-  overflow: hidden; /* Clear floats */
+  padding: 20px;
 }
 
-/* Header */
+
 header {
-  background-color: #333;
-  color: #ffffff;
+  position: fixed;
+  left: 0;
+  background-color: #36393f; /* Discord dark theme header background color */
+  color: #ffffff; /* White text */
   padding-top: 30px;
-  min-height: 70px;
+  min-height: 100vh;
   border-bottom: #0275d8 3px solid;
+  width: calc(100% - 240px); /* Adjust width to align with the main content */
+  margin-left: 240px; /* Offset by the width of the sidebar */
+  top: 0; /* Align to the top */
+  z-index: 10; /* Ensures header stacks on top of both content and sidebar */
 }
 
 header a {
@@ -311,7 +107,7 @@ header ul {
 }
 
 header ul li {
-  display: inline;
+  display: flex;
   padding: 0 20px;
 }
 
@@ -332,58 +128,459 @@ header .highlight, header .current a {
   color: #e8491d; /* Highlight color */
   font-weight: bold;
 }
-/* Basic button styling */
-button {
-    margin: 5px;
-    padding: 10px;
-    /* Add more styles as per your design */
-  }
-  
-/* Footer */
-footer {
+/* Ensure main content is flex and can grow */
+.main-content {
+  margin-top: 70px; /* Adjust this value based on the actual height of your header */
+  margin-left: 240px; /* Push main content to the right */
+  width: calc(100% - 240px); /* Adjust width to fill remaining space */
+  position: relative; /* Position relative to account for fixed header */
+  top: 70px; /* Adjust this value to the height of your header */
+  flex: 1;
+  overflow-y: auto; /* Scroll as needed */
   padding: 20px;
-  margin-top: 20px;
-  color: #ffffff;
-  background-color: #333;
-  text-align: center;
+  flex-grow: 1; /* Allows the content to fill the remaining space */
+  background-color: #36393f; /* Light grey background */
+  z-index: 1; /* Ensures content is below the sidebar when scrolling */
+}
+/* Sidebar styles */
+.sidebar {
+  flex-grow: None;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center vertically */
+  overflow: visible; /* Allow tooltips to overflow */
+  position: fixed; /* Fixed position relative to the viewport */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  bottom: 0; /* Stretch to the bottom of the viewport */
+  width: 240px; /* Width of the sidebar */
+  overflow: visible; /* Allow tooltips to overflow */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  background-color: #2f3136; /* Discord sidebar background color */
+  width: 80px; /* Adjust width as needed */
+  z-index: 9999; /* Ensures sidebar stacks on top when scrolling */
+  min-width: 80px;
+  max-width: 80px;
 }
 
-/* Add other styles as needed */
-/* Base styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
+.sidebar h1 {
+  color: #36393f;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  position: relative; /* Context for the tooltip */
+  background-color: #5865F2; /* Discord blurple */
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s, border-radius 0.3s;
+  white-space: nowrap; /* Ensure the text does not wrap */
+  width: 50px; /* Adjust width to align with the button's right edge */
+  height: 50px; /* Adjust height to align with the button's right edge */
+  border-radius: 25px;
+  flex-grow: None;
+}
+
+.sidebar button:hover {
+  border-radius: 10px; /* More square-like on hover */
+  padding-left: 20px; /* Increase padding to make the text move */
+  background-color: #4752C4; /* Darker blurple on hover */
+  padding: 12px 24px; /* Rectangle size */
+  border-radius: 20px; /* Rounded rectangle */
+  color: white; /* For icon color */
+}
+/* Tooltip text */
+.sidebar button .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap; /* Prevent the tooltip from wrapping */
+  top: 50%;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  left: 60px;
+  /* Position the tooltip */
+  z-index: 9999;
+  transform: translateX(10px) translateY(-50%);
+  margin-left: 10px; /* Spacing from button */
+  bottom: 100%; /* Position the tooltip above the button */
+  margin-bottom: 10px; /* Space between the tooltip and the button */
+
+  /* Fade in effect */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+/* Tooltip arrow */
+.sidebar button .tooltiptext::after {
+  left: -5px; /* Position arrow on the left side of the tooltip */
+  margin-left: 0; /* Remove margin-left */
+  border-color: transparent black transparent transparent;
+
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Arrow on the left side of the tooltip */
+  transform: translateY(-50%); /* Flip the arrow direction */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  z-index: 9999;
+}
+
+/* Add styles for the active button state */
+.sidebar button.active {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+}
+
+.sidebar button.active::before {
+  content: '';
+  position: absolute;
+  left: -20px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Width of the trapezoid */
+  height: 30px; /* Height of the trapezoid */
+  background-color: white;
+  clip-path: polygon(0 0, 100% 25%, 100% 75%, 0 100%); /* Shape of the trapezoid */
+  z-index: 9999;
+}
+
+/* Tooltip container */
+.sidebar .tooltip {
+  position: relative; /* Existing setting, ensures tooltips are positioned in relation to buttons */
+  display: inline-block; /* Changed to flex to align items vertically */
+  flex-direction: column; /* Ensures vertical alignment */
+  align-items: center; /* Aligns items to the start of the sidebar */
+  z-index: 9999; /* Lower z-index than tooltip text to allow text to be on top */
+  /* ... */
+}
+
+.sidebar .tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute; /* Absolute position in relation to the tooltip container */
+  z-index: 9999; /* High z-index to make sure it's above other elements */
+  left: 100%; /* Position to the right of the button */
+  top: 50%; /* Center vertically */
+  transform: translateX(10px) translateY(-50%); /* Adjust position */
+  width: auto; /* Auto width based on content */
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap; /* Keep it on a single line */
+  /* Other styles... */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s; /* Smooth fade-in effect */
+}
+
+/* Show the tooltip text when hovering over the button */
+
+/* Tooltip arrow adjustments */
+.sidebar .tooltip .tooltiptext::after {
+  /* The arrow is created using borders */
+  content: "";
+  position: absolute;
+  /* Position the arrow on the left side at the vertical center of the tooltip */
+  left: -5px;
+  top: 50%;
+  /* Adjust for the border size to center the arrow */
+  transform: translateY(-50%) rotate(90deg);
+  /* Create a triangle using borders */
+  border-width: 5px;
+  border-style: solid;
+  /* Only the right border is visible, the others are transparent */
+  border-color: transparent black transparent transparent;
+}
+/* Animate button on hover */
+/* Button hover effect */
+.sidebar .tooltip button:hover {
+  background-color: #4752C4; /* Darker blurple on hover */
+  border-radius: 10px; /* Rounded square shape on hover */
+  transition: background-color 0.3s, border-radius 0.3s; /* Smooth transitions */
+}
+/* The container that the tooltip will be positioned in relation to */
+.tooltip-container {
+  position: relative; /* Establishes a new positioning context */
+  z-index: 9999; /* Ensures it is stacked above other base elements */
+}
+
+/* The tooltip itself */
+.tooltip-text {
+  position: absolute; /* Positions the tooltip absolutely within the tooltip-container */
+  top: 100%; /* Positions the tooltip just below the element it's describing */
+  left: 50%; /* Start at 50% of the parent element's width */
+  transform: translateX(-50%); /* Centers the tooltip */
+  z-index: 9999; /* Ensures the tooltip is above the tooltip-container and other content */
+  white-space: nowrap; /* Keeps the tooltip text on a single line */
+  /* Additional styling here */
+  visibility: hidden; /* Hides the tooltip by default */
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s ease-in-out;
+}
+
+
+
+/* Tooltip container - this will be the positioning context for the tooltip text */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9999; /* High index to ensure visibility */
+  left: 100%; /* Positioned to the right of the button */
+  top: 50%; /* Centered vertically */
+  transform: translateX(10px) translateY(-50%); /* Adjusted for exact positioning */
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap; /* Ensures the tooltip stays on one line */
+  transition: opacity 0.3s, visibility 0.3s; /* Smooth transition for tooltip */
+  opacity: 0; /* Start with tooltip invisible */
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Positioned right at the tooltip's left edge */
+  transform: translateY(-50%) rotate(90deg); /* Rotated to point towards the tooltip */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent; /* Arrow is black */
+}
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  position: fixed; /* Fixed position relative to the viewport */
+  white-space: nowrap;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 9999; /* Ensure it's above everything else */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+
+
+
+/* Ensure tooltip text is above all content */
+.tooltip .tooltiptext {
+  z-index: 9999; /* Make sure this is higher than any other z-index values */
+}
+.main-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Utility classes */
+.full-height {
+  height: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; /* White text for headings */
+}
+
+/* Additional styles */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #5865f2; /* Discord's blurple button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+/* Side Panel Styles */
+.side-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f3f3f3;
+  box-shadow: -5px 0 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  display: none; /* Hidden by default */
+}
+
+/* Show the panel */
+.side-panel.show {
+  display: block;
+}
+
+.palette-item {
+  border: 1px solid #ccc;
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: grab;
+}
+.palette-container {
+  position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+  right: 20px; /* Adjust as needed, depending on your layout */
+  top: 20px; /* Adjust as needed */
+  z-index: 10; /* Higher than the flowsheet's z-index to stack on top */
+  width: 200px; /* Adjust based on the size of your palette items */
+  padding: 10px;
+  background: #fff; /* Or any background color you prefer */
+  border: 1px solid #ccc; /* Optional, adds a border around the palette */
+  border-radius: 4px; /* Optional, rounds the corners of the palette */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional, adds a shadow for better visibility */
+}
+.flowsheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10000px; /* Large width */
+  height: 10000px; /* Large height */
+  background-color: rgb(43, 43, 43); /* Example background */
+  z-index: -1; /* Ensure it's behind other content */
+  overflow: auto; /* Allow scrolling */
+}
+/* Palette container styles */
+.palette {
+  position: absolute; /* Positioned absolutely within its parent container */
+  right: 0; /* Aligned to the right */
+  top: 0; /* Aligned to the top */
+  z-index: 10; /* Ensure it's above the flowsheet */
+  width: 200px; /* Width of the palette */
+  background: #fff; /* Background color */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow for better visibility */
+  padding: 10px; /* Padding inside the palette */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+button:hover {
+  background-color: #4752c4; /* Darker blurple on hover */
+}
+
+/* Flexbox for layout */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer styles */
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #36393f; /* Same as header */
+  color: #72767d; /* Muted text color for footer */
+  text-align: center;
+  padding: 1rem;
+  position: fixed; /* Fix footer to the bottom */
+  left: 240px; /* Align with the main content */
+  right: 0; /* Stretch across to the right edge of the screen */
+  z-index: 0; /* Ensures footer stacks on top of both content and sidebar */
+}
+/* General Settings Panel Styles */
+.settings-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f3f3f3;
+  box-shadow: -5px 0 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+/* Make sure the configuration panel is within the flowsheet container in your HTML */
+#flowsheetCanvas + .config-panel {
+  position: absolute;
+  /* Adjust top and left to position the panel next to the selected unit */
+}
+#flowsheetCanvas img {
+  position: absolute;
+  cursor: pointer;
+}
+/* Additional styling for visibility and interaction */
+#flowsheetContainer {
+  min-width: 5000px; /* Arbitrary large width */
+  min-height: 5000px; /* Arbitrary large height */
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 24px, rgba(0,0,0,0.1) 25px), repeating-linear-gradient(-90deg, transparent, transparent 24px, rgba(0,0,0,0.1) 25px);
+  background-size: 25px 25px;
+}
+
+/* Active class for displaying panels */
+.active {
+  display: block; /* or flex, depending on your layout needs */
+}
+
+/* Mass & Energy Balance Overlay Panel */
+#massEnergyBalanceOverlay {
+  position: absolute;
+  /* Set top, right, bottom, left as needed */
+  display: none; /* Hidden by default */
+  z-index: 10;
+  /* Add more styling */
+}
+
+
+/* Sidebar styles */
+#processUnits img {
+  width: 50px; /* Adjust as needed */
+  margin: 10px;
+  cursor: grab;
+}
+
+.settings-panel h2 {
+  margin-bottom: 20px;
+}
+
+.setting-item {
+  margin-bottom: 15px;
+}
+
   /* Responsive styles */
   @media (max-width: 1200px) {
     h1 {
       font-size: 22px;
     }
-  }
-  
-  @media (max-width: 992px) {
-    h1 {
-      font-size: 20px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 18px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 16px;
-    }
     body {
       padding: 10px;
     }
+    .flex {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100px;
+    }
+    .main-content, header, footer {
+      margin-left: 0; /* Align with the new sidebar width */
+      width: 100%;
+    }
   }
-  
