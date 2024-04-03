@@ -1,9 +1,19 @@
 [package]
-name = "darcy_weisbach_wasm"
+name = "franks_chemical_simulator"
 version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+edition = "2018"
 
 [dependencies]
-wasm-bindgen = "0.2"
+wasm-bindgen = "0.2.92"
+
+# Make console_error_panic_hook an optional dependency
+console_error_panic_hook = { version = "0.1.6", optional = true }
+
+[lib]
+crate-type = ["cdylib"]
+
+#[features]
+# Define a feature that includes the console_error_panic_hook
+# This way, it can be enabled optionally during compilation
+#default = []
+#console_error_panic_hook = ["console_error_panic_hook"]
