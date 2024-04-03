@@ -2,7 +2,7 @@
 node_modules/
 
 # Rust target directory
-rust/target/
+target/
 
 # Environment variables
 .env
