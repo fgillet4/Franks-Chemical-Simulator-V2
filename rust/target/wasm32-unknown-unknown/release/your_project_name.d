@@ -1,1 +1,0 @@
-/Users/francisbrain4/Documents/Franks-Chemical-Simulator-V2/rust/target/wasm32-unknown-unknown/release/your_project_name.wasm: /Users/francisbrain4/Documents/Franks-Chemical-Simulator-V2/rust/src/lib.rs
