@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 
+# Rust target directory
+rust/target/
+
 # Environment variables
 .env
 
