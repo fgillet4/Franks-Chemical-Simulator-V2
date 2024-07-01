@@ -251,5 +251,54 @@ Here are some additional tips:
 Commit Often: Make small, frequent commits with meaningful commit messages.
 Branch: Use branches for new features or bug fixes.
 Pull Requests: Use pull requests to merge branches, which allows for code review.
+
+# Getting Set Up on Fedora Linux
+
+To get your Electron project up and running on a new Linux machine, you'll need to follow these steps to install Node.js, npm, and the required packages for your project.
+
+## Step-by-Step Guide
+
+### 1. Install Node.js and npm
+
+First, ensure that Node.js and npm are installed on your Fedora system. You can install them using the following commands:
+
+´´´sh
+sudo dnf install nodejs npm
+´´´
+
+### 2. Navigate to Your Project Directory
+
+Change to the directory of your Electron project:
+
+´´´sh
+cd /path/to/your/project/Franks-Chemical-Simulator-V2
+´´´
+
+### 3. Install Project Dependencies
+
+Install the dependencies listed in your `package.json` file, including Electron:
+
+´´´sh
+npm install
+´´´
+
+### 4. Install Electron Globally (Optional)
+
+If you prefer to install Electron globally, you can use:
+
+´´´sh
+npm install -g electron
+´´´
+
+However, it's usually recommended to install Electron as a dev dependency within your project to ensure consistency across different environments.
+
+### 5. Run Your Project
+
+Now you can start your project using npm:
+
+´´´sh
+npm start
+´´´
+
 Fetch Often: Regularly git fetch to stay updated with what's happening in the remote repo.
 Remember, the key to version control is regular commits and clear, descriptive messages that explain what each commit does. This practice helps you and others understand the project's history and makes collaboration easier.
