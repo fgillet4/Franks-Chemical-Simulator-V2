@@ -184,16 +184,16 @@ Create a Repository (Repo): Start by creating a new repo on GitHub. Provide a na
 Clone the Repo:
 
 To clone the repo to your local machine, use:
-bash
-Copy code
+```bash
 git clone https://github.com/your-username/your-repository-name.git
+```
 This will create a directory with the name of your repo and download all of its contents.
 Create a Branch:
 
 Before making changes, it’s good practice to create a new branch:
-bash
-Copy code
+```bash
 git checkout -b new-feature
+```
 This switches you to a new branch called new-feature.
 Make Changes:
 
@@ -201,23 +201,23 @@ Make changes to files in your local project directory.
 Stage Changes:
 
 To stage your changes for commit, use:
-bash
-Copy code
+```bash
 git add .
+```
 This adds all the changed files to the staging area.
 Commit Changes:
 
 To commit these changes, use:
-bash
-Copy code
+```bash
 git commit -m "Add a relevant commit message"
+```
 Replace "Add a relevant commit message" with a message that describes the changes you made.
 Push Changes to GitHub:
 
 To push your branch and changes to GitHub, use:
-bash
-Copy code
+```bash
 git push origin new-feature
+```
 This will upload your changes to the new-feature branch on GitHub.
 Create a Pull Request (PR):
 
@@ -227,17 +227,17 @@ Review, Merge, and Pull:
 
 Once your PR is reviewed and approved, you can merge it into the main branch.
 After merging, pull the changes to your local main branch to keep it up to date:
-bash
-Copy code
+```bash
 git checkout main
 git pull origin main
+```
 Tagging Releases:
 
 For version control, you can tag significant points (like a release) in your commit history for future reference:
-bash
-Copy code
+```bash
 git tag v1.0.0
 git push origin v1.0.0
+```
 Replace v1.0.0 with your version number.
 Handling Merge Conflicts:
 
@@ -262,33 +262,33 @@ To get your Electron project up and running on a new Linux machine, you'll need 
 
 First, ensure that Node.js and npm are installed on your Fedora system. You can install them using the following commands:
 
-´´´sh
+```bash
 sudo dnf install nodejs npm
-´´´
+```
 
 ### 2. Navigate to Your Project Directory
 
 Change to the directory of your Electron project:
 
-´´´sh
+```sh
 cd /path/to/your/project/Franks-Chemical-Simulator-V2
-´´´
+```
 
 ### 3. Install Project Dependencies
 
 Install the dependencies listed in your `package.json` file, including Electron:
 
-´´´sh
+```sh
 npm install
-´´´
+```
 
 ### 4. Install Electron Globally (Optional)
 
 If you prefer to install Electron globally, you can use:
 
-´´´sh
+```sh
 npm install -g electron
-´´´
+```
 
 However, it's usually recommended to install Electron as a dev dependency within your project to ensure consistency across different environments.
 
@@ -296,9 +296,9 @@ However, it's usually recommended to install Electron as a dev dependency within
 
 Now you can start your project using npm:
 
-´´´sh
+```sh
 npm start
-´´´
+```
 
 Fetch Often: Regularly git fetch to stay updated with what's happening in the remote repo.
 Remember, the key to version control is regular commits and clear, descriptive messages that explain what each commit does. This practice helps you and others understand the project's history and makes collaboration easier.
